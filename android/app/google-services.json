@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "140588521796",
+    "firebase_url": "https://jogof-26fca.firebaseio.com",
+    "project_id": "jogof-26fca",
+    "storage_bucket": "jogof-26fca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140588521796:android:75e0707aa1cda8363cdf11",
+        "android_client_info": {
+          "package_name": "com.example.jogo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140588521796-q9l85c2c35ppb8bfnedevjseut3hae78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANVyORMj26l2YjzilwW8BEazupSdidCf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140588521796-q9l85c2c35ppb8bfnedevjseut3hae78.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
