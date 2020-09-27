@@ -36,6 +36,11 @@ class _LoginPageState extends ModularState<LoginPage, LoginController> {
               child: Text('Clica'),
               onPressed: () {
                 controller.login();
+              }),
+          RaisedButton(
+              child: Text("Cadastro"),
+              onPressed: () {
+                Modular.to.pushNamed('/cadastrousuario');
               })
         ],
       ),

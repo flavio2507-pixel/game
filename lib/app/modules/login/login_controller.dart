@@ -11,6 +11,8 @@ FirebaseAuth _auth = FirebaseAuth.instance;
 
 abstract class _LoginControllerBase with Store {
   @observable
+  String idt;
+  @observable
   String mail = '';
 
   @observable
@@ -27,6 +29,7 @@ abstract class _LoginControllerBase with Store {
     final User user = (await _auth.signInWithEmailAndPassword(
             email: mail.trim(), password: pass.trim()))
         .user;
+    idt = user.getIdToken() as String;
     return user;
   }
 }

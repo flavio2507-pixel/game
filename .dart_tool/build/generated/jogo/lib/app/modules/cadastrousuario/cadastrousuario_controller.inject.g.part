@@ -1,0 +1,9 @@
+// **************************************************************************
+// InjectionGenerator
+// **************************************************************************
+
+final $CadastrousuarioController = BindInject(
+  (i) => CadastrousuarioController(),
+  singleton: true,
+  lazy: true,
+);

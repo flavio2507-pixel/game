@@ -19,6 +19,21 @@ final $LoginController = BindInject(
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$LoginController on _LoginControllerBase, Store {
+  final _$idtAtom = Atom(name: '_LoginControllerBase.idt');
+
+  @override
+  String get idt {
+    _$idtAtom.reportRead();
+    return super.idt;
+  }
+
+  @override
+  set idt(String value) {
+    _$idtAtom.reportWrite(value, super.idt, () {
+      super.idt = value;
+    });
+  }
+
   final _$mailAtom = Atom(name: '_LoginControllerBase.mail');
 
   @override
@@ -84,6 +99,7 @@ mixin _$LoginController on _LoginControllerBase, Store {
   @override
   String toString() {
     return '''
+idt: ${idt},
 mail: ${mail},
 pass: ${pass}
     ''';

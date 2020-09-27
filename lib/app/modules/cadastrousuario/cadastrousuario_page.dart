@@ -22,7 +22,23 @@ class _CadastrousuarioPageState
         title: Text(widget.title),
       ),
       body: Column(
-        children: <Widget>[],
+        children: <Widget>[
+          TextField(
+            onChanged: (value) {
+              controller.setMail(value);
+            },
+          ),
+          TextField(
+            onChanged: (value) {
+              controller.setNome(value);
+            },
+          ),
+          RaisedButton(
+              child: Text('cadastro'),
+              onPressed: () {
+                controller.savedate();
+              })
+        ],
       ),
     );
   }

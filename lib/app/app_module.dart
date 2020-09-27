@@ -1,3 +1,5 @@
+import 'package:jogo/app/modules/cadastrousuario/cadastrousuario_module.dart';
+
 import 'app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +20,7 @@ class AppModule extends MainModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, module: LoginModule()),
+        ModularRouter("/cadastrousuario", module: CadastrousuarioModule()),
       ];
 
   @override
